@@ -7,6 +7,10 @@ class CommunitySerializer(serializers.ModelSerializer):
         model = Community
         fields = ['id',  'title', 'body']
     
+class CommunitySerializer2(serializers.ModelSerializer):
+    class Meta:
+        model = Community
+        fields = ['id', 'title', 'body','created_at']
 
 class CommentRequestSerializer(serializers.ModelSerializer):
     class Meta:
